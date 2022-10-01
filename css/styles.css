@@ -141,7 +141,7 @@ a {
     
     position: absolute;
     left: 0;
-    bottom: 0;
+    bottom: -1px;
     opacity: 0;
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -253,11 +253,6 @@ a {
     display: flex;
     justify-content: center;
     margin-bottom: 30px;
-    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.features-card-link:hover, .features-card-link:focus {
-    border: 1px solid var(--accent-color);
 }
 
 .features-list, .works-list, .team-title-list {
@@ -461,7 +456,7 @@ a {
     border-radius: 4px;
     display: flex;
     justify-content: center;
-    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-link:hover, .clients-link:focus {
@@ -475,6 +470,7 @@ a {
 
 .clients-logo {
     fill: var(--icon-color);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
